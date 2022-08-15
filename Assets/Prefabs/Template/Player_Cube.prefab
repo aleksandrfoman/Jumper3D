@@ -64,66 +64,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   methods: 3
-  playerHand:
-    hand: {fileID: 5382015429998078910}
-    lastPoint: {fileID: 7768825302600357889}
-    stick: {fileID: 5235737231359893841}
-    minY: -0.7
-    angleHandSpeed: 10
-    stickHeight: 6.5
-    rb: {fileID: -3902507509017570088}
-    curveX:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.9958129
-        value: 0.15414327
-        inSlope: -6.5711484
-        outSlope: -6.5711484
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.045827493
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    curveY:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 2
-        outSlope: 2
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    force: 25
-    pos: {x: 0, y: 0, z: 0}
-  playerMover:
-    speed: 4
+  speed: 8
+  hand: {fileID: 5382015429998078910}
+  lastPoint: {fileID: 7768825302600357889}
+  stick: {fileID: 5235737231359893841}
+  minY: -0.7
+  angleHandSpeed: 10
+  stickHeight: 11.2
+  curveX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.6267597
+      outSlope: -0.6267597
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9971924
+      value: 0.375
+      inSlope: -0.6267597
+      outSlope: -0.6267597
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  curveY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stickModifySpeed: 1.25
+  force: 30
+  pos: {x: 0, y: 0, z: 0}
 --- !u!114 &1387473211618341601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e82e92837e195d8499a1ccaeae937724, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.19849001
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e82e92837e195d8499a1ccaeae937724, type: 3}
       propertyPath: m_LocalScale.z
@@ -328,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e82e92837e195d8499a1ccaeae937724, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.64
+      value: 10.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e82e92837e195d8499a1ccaeae937724, type: 3}
       propertyPath: m_LocalRotation.w
@@ -361,6 +359,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e82e92837e195d8499a1ccaeae937724, type: 3}
       propertyPath: m_Name
       value: stick
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e82e92837e195d8499a1ccaeae937724, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82e92837e195d8499a1ccaeae937724, type: 3}

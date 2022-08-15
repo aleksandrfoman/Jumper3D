@@ -141,7 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1473b4fbe41efae449fdf1f31d495ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  methods: 4
+  methods: 6
   camera: {fileID: 3718510628770311395}
-  offcet: {x: 7, y: 0, z: -30}
-  speed: 5
+  offsetStart: {x: 15, y: 15, z: -60}
+  offsetTap: {x: 6, y: 8, z: -25}
+  speed: 8

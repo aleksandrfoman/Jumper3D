@@ -7,10 +7,11 @@ namespace Template.Managers
     public class LevelLogic : MonoCustom
     {
         [SerializeField] private LevelData levelData;
-        
         private LevelCreator levelCreator;
         private LevelEvents levelEvents;
-        
+
+        [Space][SerializeField] private Transform finishLevel;
+        public Transform FinishLevel => finishLevel;
         
         [Space] [SerializeField] private SpawnPoint playerSpawn;
         [SerializeField] private GamePhase gamePhase;

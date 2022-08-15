@@ -22,8 +22,8 @@ namespace Template.Managers
         private void InitAll(LevelLogic logic, GameManager gameManager)
         {
             Player.Init(logic);
-            Canvas.Init(logic, gameManager);
-            Camera.Init(Player);
+            Canvas.Init(logic, gameManager,Player);
+            Camera.Init(Player,logic);
         }
 
         

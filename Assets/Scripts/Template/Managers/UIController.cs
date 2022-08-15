@@ -28,7 +28,10 @@ namespace Template.Managers
 
         [Header("Data")]
         [ReadOnly] [SerializeField] private LevelLogic levelLogic;
+        [ReadOnly][SerializeField] private PlayerController playerController;
         [ReadOnly] [SerializeField] private GameManager gameManager;
+        [Header("Debug")]
+        [SerializeField]private TMP_Text debugText;
 
 
         public bool IsOverUI => elementsController.IsOverElements();
@@ -39,13 +42,18 @@ namespace Template.Managers
             set => levelLogic.ChangePhase(value);
         }
         public GameDataObject GameData => gameManager?.GameData;
-        
+
+        public void UpdateDebugText()
+        {
+            debugText.text = playerController.Percet.ToString();
+        }
 
         #region Mono
 
-        public void Init(LevelLogic level, GameManager gameManager)
+        public void Init(LevelLogic level, GameManager gameManager, PlayerController player)
         {
             levelLogic = level;
+            playerController = player;
             this.gameManager = gameManager;
             elementsController.Init(this);
         }
@@ -61,6 +69,8 @@ namespace Template.Managers
         {
             base.OnUpdate();
             EditorControls();
+            UpdateDebugText();
+
         }
         #endregion
 
