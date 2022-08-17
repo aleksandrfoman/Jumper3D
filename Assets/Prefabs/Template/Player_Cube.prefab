@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 451a05080177e5246908213df41d9ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  methods: 3
+  methods: 7
   speed: 8
   hand: {fileID: 5382015429998078910}
   lastPoint: {fileID: 7768825302600357889}

@@ -84,10 +84,10 @@ namespace Template
                             height += stickHeight * Time.deltaTime * stickModifySpeed;
                         }
                     }
-                    else
-                    {
-                        ThrowPlayer(level);
-                    }
+                    //else
+                    //{
+                    //    ThrowPlayer(level);
+                    //}
 
                     if (Input.GetKeyUp(KeyCode.Mouse0))
                     {
@@ -95,6 +95,15 @@ namespace Template
                     }
                     transform.DOMove(stick.transform.position + (Vector3.up * height), 0.5f).SetEase(Ease.Linear);
                 }
+               
+            }
+        }
+
+        public override void OnFixedUpdate()
+        {
+            base.OnFixedUpdate();
+            if(level.GamePhase == GamePhase.Game)
+            {
                 if (isMove)
                 {
                     transform.Translate(Vector3.forward * speed * Time.fixedDeltaTime);
